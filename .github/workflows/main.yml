@@ -13,15 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
+      - uses: actions/checkout@v3
+
+      - name: 'Login to Docker hub'
+        run: docker login --username youssef1001 --password dckr_pat_Mz0s7rxp82yixy57bJfONtwt0Gw
+
       - name: 'Testing Github actions'
         run: pwd
 
       - name: 'Testing printing' 
         run: echo Youssef
-        
-      - uses: actions/checkout@v3
+
 
       - name: 'Printing folder contents'
         run: ls
+
 
 
