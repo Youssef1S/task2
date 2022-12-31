@@ -18,4 +18,10 @@ jobs:
 
       - name: 'Testing printing' 
         run: echo Youssef
+        
+      - uses: actions/checkout@v3
+
+      - name: 'Printing folder contents'
+        run: ls
+
 
