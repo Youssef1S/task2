@@ -1,1 +1,21 @@
+on: 
+  push: 
+    branches:
+      - main
+
+
+
+
+
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: 'Testing Github actions'
+        run: pwd
+
+      - name: 'Testing printing' 
+        run: echo Youssef
 
